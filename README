@@ -1,0 +1,14 @@
+This repository contains some ASM codes I've writing during my studies into Assembly language.
+
+Some points to consider when checking this repository out:
+
+1- All codes here are written in asm32 and will not even be properly assembled in x86_64 processors
+2- I'm basing my studies in the book "Programming GroundUp", so, examples here similars with those
+   in the book are not mere coincidence :)
+
+If you have questions about asm language I'll be glad to help in answer those questions, but, I'm
+also learning, so, I can don't have the answer for your question immediately.
+
+Cheers :)
+--Carlos
+
