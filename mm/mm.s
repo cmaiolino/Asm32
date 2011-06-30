@@ -194,7 +194,7 @@ allocate_here:		#If we've made it here, that
 			#in %eax
 
 	#mark space as unavailable
-	movl $UNAVAILABLE, HDR_AVAIL_OFFSEG(%eax)
+	movl $UNAVAILABLE, HDR_AVAIL_OFFSET(%eax)
 	addl $HEADER_SIZE, %eax		#move %eax past the header
 					#to the usable memory
 					#(since that's what we
@@ -250,7 +250,7 @@ move_break:	#If we've made it here, that means
 	#we're about to give it away
 	movl $UNAVAILABLE, HDR_AVAIL_OFFSET(%eax)
 	#set the size of the memory
-	movl %ecx, HDR_SIZE_OFFSDET(%eax)
+	movl %ecx, HDR_SIZE_OFFSET(%eax)
 
 	#move %eax to the actual start of usable memory
 	#%eax now holds the return value
